@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>DJ AI Partnership LLC × JL Fitness — Accord de collaboration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15151a;
+    --paper:#f6f4ef;
+    --card:#ffffff;
+    --red:#e23b2e;
+    --blue:#1c3a56;
+    --muted:#6a6a64;
+    --line:#dedad0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Bebas Neue',sans-serif;
+    letter-spacing:0.01em;
+    line-height:0.95;
+    font-weight:400;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 28px;}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    min-height:92vh;
+    display:flex;
+    align-items:flex-end;
+    background:var(--ink);
+    overflow:hidden;
+  }
+  .hero img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;
+    opacity:0.55;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(0deg, rgba(10,10,12,0.96) 0%, rgba(10,10,12,0.55) 45%, rgba(10,10,12,0.25) 100%);
+  }
+  .hero-content{position:relative;z-index:2;color:#fff;padding:80px 0 56px;width:100%;}
+  .hero-kicker{color:var(--red);font-weight:700;font-size:0.95rem;margin-bottom:14px;}
+  .hero h1{font-size:clamp(3rem,8vw,6.2rem);color:#fff;}
+  .hero h1 span{color:var(--red);}
+  .hero-sub{max-width:560px;margin-top:20px;font-size:1.1rem;color:#d8d8d4;}
+  .hero-meta{display:flex;gap:28px;margin-top:36px;flex-wrap:wrap;}
+  .hero-meta div{border-left:2px solid var(--red);padding-left:12px;}
+  .hero-meta b{display:block;font-size:1.05rem;}
+  .hero-meta span{font-size:0.85rem;color:#b8b8b4;}
+
+  /* SECTION BASE */
+  section{padding:84px 0;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head h2{font-size:clamp(2.2rem,5vw,3.4rem);}
+  .section-head p{color:var(--muted);margin-top:14px;font-size:1.05rem;}
+
+  /* PARTNERS GRID */
+  .partners{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .partner-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;
+    border:1px solid var(--line);
+  }
+  .partner-col{padding:44px;}
+  .partner-col + .partner-col{border-left:1px solid var(--line);}
+  .partner-tag{font-size:0.78rem;font-weight:700;color:var(--red);margin-bottom:10px;}
+  .partner-col h3{font-size:2rem;margin-bottom:14px;}
+  .partner-col p{color:var(--muted);margin-bottom:10px;}
+  .partner-col ul{margin:16px 0 0;padding-left:0;list-style:none;}
+  .partner-col li{
+    padding:10px 0;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;gap:12px;font-size:0.95rem;
+  }
+  .partner-col li b{font-weight:600;}
+  .partner-col li span{color:var(--muted);text-align:right;}
+
+  /* SCOPE */
+  .scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .scope-item{background:var(--card);padding:32px 28px;}
+  .scope-num{font-family:'Bebas Neue';font-size:2.4rem;color:var(--red);line-height:1;margin-bottom:10px;}
+  .scope-item h3{font-family:'Inter';font-weight:700;font-size:1.05rem;margin-bottom:8px;}
+  .scope-item p{color:var(--muted);font-size:0.95rem;}
+
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:stretch;}
+  .gallery figure{position:relative;border-radius:2px;overflow:hidden;background:#111;}
+  .gallery img{width:100%;height:100%;object-fit:cover;}
+  .gallery figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:18px 20px;
+    background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);
+    color:#fff;font-size:0.9rem;
+  }
+
+  /* AGREEMENT */
+  .agreement{background:var(--blue);color:#fff;}
+  .agreement .wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;}
+  .agreement h2{font-size:clamp(2rem,4.5vw,2.9rem);color:#fff;}
+  .agreement p{color:#c9d4dd;margin-top:16px;font-size:1.02rem;}
+  .signoff{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);padding:28px;border-radius:2px;}
+  .signoff .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:0.95rem;}
+  .signoff .row:last-child{border-bottom:none;}
+  .signoff .row span:first-child{color:#a9b8c4;}
+  .signoff .row span:last-child{font-weight:600;text-align:right;}
+
+  /* FOOTER */
+  footer{padding:48px 0;text-align:center;color:var(--muted);font-size:0.85rem;}
+  footer b{color:var(--ink);}
+
+  @media (max-width:760px){
+    .partner-grid{grid-template-columns:1fr;}
+    .partner-col + .partner-col{border-left:none;border-top:1px solid var(--line);}
+    .scope-grid{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:1fr;}
+    .agreement .wrap{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="assets/award.jpg" alt="Cérémonie de remise des prix — JL Fitness Classic">
+  <div class="hero-content wrap">
+    <div class="hero-kicker">Accord de collaboration</div>
+    <h1>DJ AI PARTNERSHIP <span>×</span> JL FITNESS</h1>
+    <p class="hero-sub">Un partenariat entre DJ AI Partnership LLC et JL Fitness pour la collecte responsable de données vidéo issues du monde réel, dans un environnement professionnel du secteur fitness.</p>
+    <div class="hero-meta">
+      <div><b>Delmas, Haïti</b><span>Lieu du partenariat</span></div>
+      <div><b>Entreprise enregistrée</b><span>JL Fitness</span></div>
+      <div><b>Collecte vidéo POV</b><span>Secteur fitness / hands-on</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="partners">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Les deux parties</h2>
+      <p>Présentation des entités engagées dans cette collaboration.</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner-col">
+        <div class="partner-tag">PARTENAIRE OPÉRATIONNEL</div>
+        <h3>DJ AI Partnership LLC</h3>
+        <p>Constitue un réseau de contributeurs indépendants chargés de capturer, avec consentement, des vidéos de travail réel à la première personne (POV), destinées à des projets de données pour l'intelligence artificielle.</p>
+        <ul>
+          <li><b>Rôle</b><span>Coordination &amp; conformité</span></li>
+          <li><b>Site</b><span>jdaipartnership.com</span></li>
+          <li><b>Format</b><span>Vidéo POV, consentement requis</span></li>
+        </ul>
+      </div>
+      <div class="partner-col">
+        <div class="partner-tag">PARTENAIRE DE TERRAIN</div>
+        <h3>JL Fitness</h3>
+        <p>Centre de fitness physique et enregistré, basé à Delmas, Haïti. Fournit l'environnement de travail réel — coaching, usage d'équipements, préparation d'athlètes — pour la collecte de données.</p>
+        <ul>
+          <li><b>Adresse</b><span>Delmas 29, rue Sambour #12</span></li>
+          <li><b>Contact</b><span>jlfitnesshaiti@gmail.com</span></li>
+          <li><b>Statut</b><span>Entreprise physique, enregistrée</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Le terrain</h2>
+      <p>Aperçu de l'environnement et de l'activité de JL Fitness.</p>
+    </div>
+    <div class="gallery">
+      <figure>
+        <img src="assets/award.jpg" alt="Cérémonie JL Fitness Classic">
+        <figcaption>Cérémonie de remise des prix — JL Fitness Classic, 1ère édition</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/equipment.jpg" alt="Équipement de cardio-training ICG">
+        <figcaption>Parc d'équipements professionnels — salle JL Fitness</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="scope">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Portée de la collaboration</h2>
+      <p>Ce que couvre l'accord entre les deux parties.</p>
+    </div>
+    <div class="scope-grid">
+      <div class="scope-item">
+        <div class="scope-num">01</div>
+        <h3>Environnement vérifié</h3>
+        <p>JL Fitness met à disposition un lieu de travail réel et enregistré pour les sessions de capture.</p>
+      </div>
+      <div class="scope-item">
+        <div class="scope-num">02</div>
+        <h3>Consentement d'abord</h3>
+        <p>Toute personne filmée est informée et peut retirer son consentement à tout moment.</p>
+      </div>
+      <div class="scope-item">
+        <div class="scope-num">03</div>
+        <h3>Coordination</h3>
+        <p>DJ AI Partnership LLC encadre la qualité, la conformité et le suivi des soumissions vidéo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="agreement">
+  <div class="wrap">
+    <div>
+      <h2>Accord confirmé entre les deux parties</h2>
+      <p>La direction de JL Fitness a donné son accord et son autorisation pour cette collaboration avec DJ AI Partnership LLC, dans le cadre d'un projet de collecte de données vidéo respectueux du consentement et de la vie privée.</p>
+    </div>
+    <div class="signoff">
+      <div class="row"><span>Partenaire</span><span>JL Fitness</span></div>
+      <div class="row"><span>Lieu</span><span>Delmas, Haïti</span></div>
+      <div class="row"><span>Autorisation</span><span>Accordée par la direction</span></div>
+      <div class="row"><span>Coordination</span><span>DJ AI Partnership LLC</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>DJ AI Partnership LLC</b> × <b>JL Fitness</b> — document de partenariat</p>
+  </div>
+</footer>
+
+</body>
+</html>
