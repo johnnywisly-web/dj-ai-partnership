@@ -2,7 +2,7 @@
 
 Updated contractor recruitment website.
 
-- Logo added at `assets/logo.png`
+- Logo added at assets/logo.png
 - Apply buttons link to the provided Google Form
 - Individual independent contractor positioning
 - Headstrap explicitly required
