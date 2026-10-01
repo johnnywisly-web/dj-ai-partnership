@@ -6,8 +6,7 @@ Updated contractor recruitment website.
 - Apply buttons link to the provided Google Form
 - Individual independent contractor positioning
 - Headstrap explicitly required
-- Compatible smartphone requirements
-- $6/hour base-rate messaging with location-based variation
+- Compatible smartphone requirement and a headstrap 
 - Privacy and safety guidance
 
 Replace the corresponding files in your GitHub repository and commit the changes. GitHub Pages should publish automatically using your existing configuration.
