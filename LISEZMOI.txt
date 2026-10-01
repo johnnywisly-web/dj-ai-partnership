@@ -1,0 +1,24 @@
+INVITATION DE MARIAGE - NAIKA & JOHNNY
+======================================
+
+Contenu du dossier
+  index.html            -> le site (ouvrir avec un navigateur)
+  assets/photo-couple.jpg -> la photo du couple
+  assets/musique.mp3    -> la chanson
+
+Musique et photo
+  La photo et la chanson sont déjà intégrées dans index.html.
+  Pour changer la chanson : remplacez assets/musique.mp3 puis
+  demandez la mise à jour, ou changez la source de la balise <audio>.
+
+Mettre le site en ligne (Netlify)
+  1. Décompressez le zip.
+  2. Allez sur https://app.netlify.com/drop
+  3. Glissez tout le dossier "invitation" dans la page.
+  4. Les réponses RSVP arrivent dans Netlify > Forms, et le
+     bouton WhatsApp permet d'envoyer aussi la réponse au 829-463-4049.
+
+Modifier les textes
+  Ouvrez index.html avec un éditeur de texte (Bloc-notes, VS Code).
+  Date, lieu, téléphone, courriel : cherchez le texte et changez-le.
+  Date du compte à rebours : cherchez  new Date('2026-11-08T17:00:00-04:00')
